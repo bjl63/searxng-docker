@@ -25,6 +25,8 @@ services:
   searxng:
     container_name: searxng
     image: docker.io/searxng/searxng:latest
+    build:
+      context: ./searxng  # Specify the build context directory
     restart: unless-stopped
     networks:
       - searxng
