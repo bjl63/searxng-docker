@@ -47,10 +47,11 @@ services:
       options:
         max-size: "1m"
         max-file: "1"
-   develop:
+    develop:
       watch:
-      - action: rebuild
-        path: ./searxng
+        - action: rebuild
+          path: ./searxng
+
 networks:
   searxng:
 
